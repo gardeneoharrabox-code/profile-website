@@ -1,0 +1,160 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Space Grotesk !important;
+}
+
+div {
+    overflow-x: hidden;
+}
+
+#navbar-navbar {
+    padding: 8px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    background-color: #F7F7F7;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #5826ED;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link.active:hover::after {
+    width: 100%;
+}
+
+.nav-item {
+    font-size: 16px;
+    padding: 0px 5px;
+}
+
+#name {
+    font-size: 35px;
+    margin-top: 1rem;
+}
+
+.profile-home {
+    text-align: center;
+    border-radius: ;
+    object-fit: cover;
+    width: 25rem;
+    height: 31rem;
+}
+
+.div-home {
+    background-color: #EDEDED;
+    padding-top: 2rem;
+}
+
+#head-work {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+#btn-contact {
+    background-color: #AB44C9;
+    color: whitesmoke;
+    border-radius: 0;
+}
+
+#content-about {
+    margin-top: 5rem;
+}
+
+#head-text-about {
+    margin-top: 8rem;
+}
+
+
+#row-about {
+    text-align: center;
+    width: 100px;
+    height: 10px;
+    background-color:;
+}
+
+#frame-techandsoft {
+    margin-top: 7rem;
+}
+
+#frame-icon {
+    margin-bottom: 2rem;
+}
+
+
+#frame-education {
+    margin-top: 10rem;
+}
+
+#content-educ {
+    margin-top: 3rem;
+}
+
+#frame-technosoft {
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#technosoft-content {
+    margin: 2px 2px;
+}
+
+#content-experience {
+    margin-top: 3rem;
+}
+
+.btn-menu.active {
+    background-color: #5826ED !important;
+    color: whitesmoke !important;
+}
+
+
+/*Animation **/
+
+.animate-left,
+.animate-right,
+.animate-up,
+.animate-down {
+  opacity: 0;
+  transition: 0.8s ease-out;
+  will-change: transform, opacity;
+}
+
+.animate-left {
+    transform: translateX(-50px);
+}
+
+.animate-right {
+    transform: translateX(50px);
+}
+
+.animate-up {
+    transform: translateY(50px);
+}
+
+.animate-down {
+    transform: translateY(-50px);
+}
+
+.show {
+  opacity: 1;
+  transform: translate(0,0);
+}
